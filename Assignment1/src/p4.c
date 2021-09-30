@@ -1,7 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 // S.Donchez
-// A1/P4.c
-// 
+// a1/p4.c - Write a C program which uses strerror() to get the error message 
+// associated with errno values from 0 to 200. Display each error number and
+// message.Be careful to check for errors in the strerror() call and possible
+// NULL return values.
 ////////////////////////////////////////////////////////////////////////////////
 #include <string.h>
 #include <errno.h>
@@ -9,13 +11,6 @@
 
 int main()
 {
-
-	/***************************************************************************
-	* Write a C program which uses strerror() to get the error message 
-	* associated with errno values from 0 to 200. Display each error number and
-	* message.Be careful to check for errors in the strerror() call and possible
-	* NULL return values.
-	***************************************************************************/
 	char* errString;
 	for (int error = 0; error <= 200; error++)
 	{

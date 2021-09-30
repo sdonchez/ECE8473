@@ -1,7 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // S.Donchez
-// A1/P1.c
-// 
+// a1/p1.c - See comments for individual parts, below. 
 ////////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>  //For text input/output
@@ -10,19 +9,16 @@
 
 int main(void)
 {
-	/*
-	* Write a C program which displays the names and values of the following 
-	* constants from limits.h: 
-	* CHAR_BIT, CHAR_MIN, CHAR_MAX, SCHAR_MIN, SCHAR_MAX, UCHAR_MAX
-	*
-	* SHRT_MIN, SHRT_MAX, USHRT_MAX
-	*
-	* INT_MIN, INT_MAX, UINT_MAX
-	*
-	* LONG_MIN, LONG_MAX, ULONG_MAX
-	*
-	* LLONG_MIN, LLONG_MAX, ULLONG_MAX 
-	*/
+
+	/**************************************************************************
+	 * Part 1 - Write a C program which displays the names and values of the 
+	 * following constants from limits.h: 
+	 * CHAR_BIT, CHAR_MIN, CHAR_MAX, SCHAR_MIN, SCHAR_MAX, UCHAR_MAX
+	 * SHRT_MIN, SHRT_MAX, USHRT_MAX
+	 * INT_MIN, INT_MAX, UINT_MAX
+	 * LONG_MIN, LONG_MAX, ULONG_MAX
+	 * LLONG_MIN, LLONG_MAX, ULLONG_MAX
+	 **************************************************************************/
 
 	printf("Integer Values: \n\n");
 	printf("Char Types: \n");
@@ -58,8 +54,13 @@ int main(void)
 	DISP(ULLONG_MAX, "%llu");
 	printf("\n");
 
+	/***************************************************************************
+	 * Part 2 - and also computes at run-time (without using any predefined
+	 *  constants or assumptions) and displays the value of ULONG_MAX.
+	 **************************************************************************/
+
 	unsigned long maxLongUnsigned = (unsigned long)0 - (unsigned long)1;
 	printf("Maximum unsigned long value: %lu\n", maxLongUnsigned);
 
 	return 0;
-}
+} // main
