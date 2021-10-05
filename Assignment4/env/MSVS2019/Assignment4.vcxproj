@@ -35,9 +35,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{79b55a6c-3948-4541-9e11-30b5218f250e}</ProjectGuid>
+    <ProjectGuid>{5f292926-4540-47e8-95c8-c5b2f96d59ed}</ProjectGuid>
     <Keyword>Linux</Keyword>
-    <RootNamespace>Assignment3P2</RootNamespace>
+    <RootNamespace>Assignment4</RootNamespace>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <ApplicationType>Linux</ApplicationType>
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
@@ -83,24 +83,46 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <RemoteBuildCommandLine>cd ../../; make all</RemoteBuildCommandLine>
-    <RemoteReBuildCommandLine>cd ../../; make all</RemoteReBuildCommandLine>
-    <RemoteCleanCommandLine>cd ../../; make clean</RemoteCleanCommandLine>
-    <RemoteBuildOutputs>../../bin/rand</RemoteBuildOutputs>
     <OutDir>$(ProjectDir)\..\..\bin\</OutDir>
     <IntDir>$(ProjectDir)\..\..\obj\</IntDir>
+    <RemoteBuildCommandLine>cd ../../; make TransCipher</RemoteBuildCommandLine>
+    <RemoteReBuildCommandLine>cd ../../; make clean; make all</RemoteReBuildCommandLine>
+    <RemoteCleanCommandLine>cd ../../; make clean</RemoteCleanCommandLine>
+    <RemoteBuildOutputs>../../bin/CBCDecrypt; ../../bin/SubsCipher; ../../bin/TransCipher; ../../lib/librand.a; ../../lib/libswap.a</RemoteBuildOutputs>
+    <AdditionalSourcesToCopyMapping>$(ProjectDir)..\..\data\CBC.bin;$(ProjectDir)..\..\data\subs.txt;$(ProjectDir)..\..\data\trans.bin;$(ProjectDir)..\..\sh\subs.sh;$(ProjectDir)..\..\sh\doSubs.sh;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <NMakeIncludeSearchPath>../../include</NMakeIncludeSearchPath>
+    <ProjectPublicIncludePath>../../include/</ProjectPublicIncludePath>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\rand.c" />
+    <Text Include="..\..\data\subs.txt" />
+    <Text Include="..\..\Makefile" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\Assignment4\env\MSVS2019\Assignment4.vcxproj" />
-    <None Include="..\..\Makefile" />
+    <ClCompile Include="..\..\src\CBCDecrypt.c" />
+    <ClCompile Include="..\..\src\rand.c" />
+    <ClCompile Include="..\..\src\SubsCipher.c" />
+    <ClCompile Include="..\..\src\swap.c" />
+    <ClCompile Include="..\..\src\TransCipher.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\CBC.bin" />
+    <None Include="..\..\data\trans.bin" />
+    <None Include="..\..\sh\doSubs.sh" />
+    <None Include="..\..\sh\subs.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\rand.h" />
+    <ClInclude Include="..\..\include\swap.h" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <RemotePreBuildEvent>
       <Command>cd ../../</Command>
+      <AdditionalSourcesToCopyMapping>
+      </AdditionalSourcesToCopyMapping>
     </RemotePreBuildEvent>
+    <PostBuildEvent>
+      <Command>move /y $(ProjectDir)\..\..\bin\*.a $(ProjectDir)\..\..\lib</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

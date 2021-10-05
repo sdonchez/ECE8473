@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{89021d3b-c40d-470a-88da-3a47c7957c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shell Scripts">
+      <UniqueIdentifier>{d1afaabf-1b40-4682-bf58-636213d41fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{a29b497b-af1e-4bc9-8cba-3a03c051db94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\data\CBC.bin">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="..\..\data\trans.bin">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="..\..\sh\subs.sh">
+      <Filter>Shell Scripts</Filter>
+    </None>
+    <None Include="..\..\sh\doSubs.sh">
+      <Filter>Shell Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\data\subs.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="..\..\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\SubsCipher.c" />
+    <ClCompile Include="..\..\src\CBCDecrypt.c" />
+    <ClCompile Include="..\..\src\rand.c" />
+    <ClCompile Include="..\..\src\TransCipher.c" />
+    <ClCompile Include="..\..\src\swap.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\rand.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\swap.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
