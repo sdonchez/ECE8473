@@ -90,7 +90,7 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
+# *.log disabled by SDonchez for A4
 *.vspscc
 *.vssscc
 .builds
@@ -362,5 +362,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-#ignore tars created for submission
+# Ignore tars created for submission
 SDonchezAssignment*.tar
+
+# Don't ignore the log directory
+!/*/log/

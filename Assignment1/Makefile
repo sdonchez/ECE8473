@@ -14,5 +14,11 @@ p3: src/p3.c
 p4: src/p4.c
 	$(CC) src/p4.c -o bin/p4
 
+test: all
+	./bin/p1
+	./bin/p2
+	./bin/p3
+	./bin/p4
+
 clean:
 	rm -f bin/p1 bin/p2 bin/p3 bin/p4
