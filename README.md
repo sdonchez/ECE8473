@@ -7,7 +7,8 @@ This repository contains coursework implementing the assignments for ECE 8473 - 
 - [Assignment 2:](Assignment2/) Implements two random value generators, as well as a random number guessing game, all in shell scripts.
 - [Assignment 3:](Assignment3/) Makes the random number guessing game from Assignment 2 interactive, and also implements a Pseudo-Random Number Generator in C.
 - [Assignment 4:](Assignment4/) Implements 3 decryption engines
-- [Assignment 5:](Assignment5/) Implements several string functions from the standard library.
+- [Assignment 5.1:](Assignment5.1/) Implements several string functions from the standard library.
+- [Assignment 5.2:](Assignment5.2/) Implements several additional non-standard string functions, as well as a testsuite for said functions.
 
 ## Development Environment
 The development environment used for this course consists of a Windows 10 Intel x64 machine (10.0.19043 Build 19043).
