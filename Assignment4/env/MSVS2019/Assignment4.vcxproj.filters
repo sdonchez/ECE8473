@@ -24,6 +24,7 @@
     <None Include="..\..\sh\doSubs.sh">
       <Filter>Shell Scripts</Filter>
     </None>
+    <None Include="..\..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\data\subs.txt">

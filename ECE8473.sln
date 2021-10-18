@@ -13,6 +13,23 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment5.1", "Assignment
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment5.2", "Assignment5.2\env\MSVS2019\Assignment5.2.vcxproj", "{EC430BE5-0465-4D66-A9B0-A020CE276941}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52088393-FD00-4E2F-87FC-2C2B00224A7E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archives", "Archives", "{F9B1D96E-C562-4DDE-B34A-0C4C450772B6}"
+	ProjectSection(SolutionItems) = preProject
+		SDonchezAssignment1.tar = SDonchezAssignment1.tar
+		SDonchezAssignment2.tar = SDonchezAssignment2.tar
+		SDonchezAssignment3.tar = SDonchezAssignment3.tar
+		SDonchezAssignment4.tar = SDonchezAssignment4.tar
+		SDonchezAssignment5.1.tar = SDonchezAssignment5.1.tar
+		SDonchezAssignment5.2.tar = SDonchezAssignment5.2.tar
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -212,6 +229,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9B1D96E-C562-4DDE-B34A-0C4C450772B6} = {52088393-FD00-4E2F-87FC-2C2B00224A7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8256CB7B-5F43-419D-8199-08E9D42DA531}

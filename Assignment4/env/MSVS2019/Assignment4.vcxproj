@@ -107,6 +107,7 @@
   <ItemGroup>
     <None Include="..\..\data\CBC.bin" />
     <None Include="..\..\data\trans.bin" />
+    <None Include="..\..\README.md" />
     <None Include="..\..\sh\doSubs.sh" />
     <None Include="..\..\sh\subs.sh" />
   </ItemGroup>

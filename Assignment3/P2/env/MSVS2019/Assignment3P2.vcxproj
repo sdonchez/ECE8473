@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Assignment4\env\MSVS2019\Assignment4.vcxproj" />
+    <None Include="..\..\..\README.md" />
     <None Include="..\..\Makefile" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

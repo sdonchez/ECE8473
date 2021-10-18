@@ -10,4 +10,12 @@
       <Filter>Include</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\strfxns.c" />
+    <ClCompile Include="..\..\src\tester.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\README.md" />
+  </ItemGroup>
 </Project>

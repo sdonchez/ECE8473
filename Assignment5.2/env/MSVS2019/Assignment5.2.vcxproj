@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Makefile" />
+    <None Include="..\..\README.md" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <RemotePreBuildEvent>
