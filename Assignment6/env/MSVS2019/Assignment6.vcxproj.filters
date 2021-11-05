@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\p1.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{9d929c7a-a2ca-4485-906a-b46594ac82f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shell Scripts">
+      <UniqueIdentifier>{27faaddd-bce5-41f0-a2c0-83ff61284c73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\TableEncryption.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\sh\p3.sh">
+      <Filter>Shell Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>
