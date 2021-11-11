@@ -14,6 +14,7 @@ int main()
 	char* errString;
 	for (int error = 0; error <= 200; error++)
 	{
+		errno = 0;
 		errString = strerror(error);
 		int strErr = errno;
 		if (errString == NULL)

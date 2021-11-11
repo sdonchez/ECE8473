@@ -36,7 +36,7 @@ answer=$(echo hi | awk '{ srand(); print int(1+100*rand()); }')
 # setup inital bounds
 low=0
 high=101
-range=$((${high} - ${low}))
+range=$((high - low))
 
 
 ################################################################################

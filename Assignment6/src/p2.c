@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	int tableWidth = setN(argc, argv);
 
 	//read input
-	char toDecrypt[BUFSIZ];
+	char toDecrypt[BUFSIZ] = "";
 	readFromStdIn(toDecrypt);
 
 	//check if message length is a multiple of n, if not then abort
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	}
 
 	//strip whitespace
-	char stripped[strlen(toDecrypt)];
+	char stripped[strlen(toDecrypt) + 1];
 	stripWhitespace(toDecrypt, stripped);
 
 	//decrypt message

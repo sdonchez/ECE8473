@@ -38,8 +38,8 @@ int main()
 
 	//save the value of errno in case it gets changed before we need it
 	int powErr = errno;
-	printf("The value of %g squared is %g\n", FLT_MAX, result);
-	errHandler("square", "pow", powErr);
+	printf("The value of %g to the 10th power is %g\n", FLT_MAX, result);
+	errHandler("FLT_MAX to the 10th", "pow", powErr);
 	
 } // main
 

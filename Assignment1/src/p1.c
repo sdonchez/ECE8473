@@ -59,7 +59,7 @@ int main(void)
 	 *  constants or assumptions) and displays the value of ULONG_MAX.
 	 **************************************************************************/
 
-	unsigned long maxLongUnsigned = (unsigned long)0 - (unsigned long)1;
+	unsigned long maxLongUnsigned = 0UL - 1UL;
 	printf("Maximum unsigned long value: %lu\n", maxLongUnsigned);
 
 	return 0;

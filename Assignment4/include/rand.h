@@ -19,14 +19,6 @@ extern long seed; //in rand.c
 void initialScramble(long init);
 
 /*******************************************************************************
- * next -   generates a psuedo-random output of specified length based on the
- *          current seed value, updates seed for next round.
- * @param bits  integer number of bits of output to generate
- * @returns     integer representation of arbitrary binary value of length bits
- ******************************************************************************/
-static int next(int bits);
-
-/*******************************************************************************
  * nextInt -    wrapper function for next to generate a 32 bit integer output
  * @returns     32 bit psuedo-random number
  ******************************************************************************/

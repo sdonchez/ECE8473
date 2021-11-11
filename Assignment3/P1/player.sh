@@ -65,7 +65,7 @@ parseOps(){
 setup(){
     low=0
     high=101
-    range=$((${high} - ${low}))
+    range=$((high - low))
     if [ "$1" = true ];
     then
         guess=$(echo hi | awk '{ srand(); print int(1+100*rand()); }')
@@ -122,6 +122,7 @@ makeGuess(){
 ################################################################################
 parseResponse()
 {
+    echo "Response:" $1
     # check the dealer output
     if [ "$1" = "higher" ];
     then

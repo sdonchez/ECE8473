@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
     long init = hashCode(a);
     initialScramble(init);
 
-    printf("a = %s init = %li seed = %li", a, init, seed);
+    printf("a = %s init = %li seed = %li\n", a, init, seed);
 
     //generate subsequent values as desired
     for (int i = 0; i < 10; ++i)

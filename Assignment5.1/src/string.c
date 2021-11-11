@@ -26,7 +26,7 @@
  ******************************************************************************/
 size_t my_strlen( const char s[]) 
 { 
-	int count;
+	size_t count;
 
 	// iterate through string looking for terminator
 	for (count = 0; s[count] != '\0'; count++);
@@ -217,7 +217,7 @@ char *my_strchr( const char *s, int c)
 {
 	//default case should no match be found
 	char* retval = NULL;
-	for (int i = 0; ; i++)
+	for (size_t i = 0; ; i++)
 	{
 		//if there's a match, set retval to point to it and break the loop
 		if (s[i] == c)
@@ -250,14 +250,14 @@ char *my_strrchr( const char *s, int c)
 {
 	//default case should no match be found
 	char* retval = NULL;
-	int count;
+	size_t count;
 
 	//find the null terminator to use as start of search
 	for (count = 0; s[count] != '\0'; count++);
 		//no body since the goal is the iterator
 
 	//iterate through string from back to front
-	for (int i = count; i >= 0 ; i--)
+	for (size_t i = count; i >= 0 ; i--)
 	{
 		//if there's a match, update retval to point to it and break the loop
 		if (s[i] == c)
@@ -289,7 +289,7 @@ void *my_memchr( const void *v, int c, size_t size) {
 	const unsigned char* mem = v;
 
 	//iterate through size bytes of the region searching for the character
-	for (int i = 0; i < size; i++)
+	for (size_t i = 0; i < size; i++)
 	{
 		//if found, update retval to point to it and break the loop
 		if ( *(mem + i) == (unsigned char) c)
@@ -324,7 +324,7 @@ void *my_memcpy( void * restrict v1, const void * restrict v2, size_t size)
 	} // if
 
 	//copy size bytes from the source to the destination
-	for (int i = 0; i <size; i++)
+	for (size_t i = 0; i <size; i++)
 	{
 		dest[i] = src[i];
 	} // for

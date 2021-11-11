@@ -20,11 +20,11 @@ int main(int argc, char* argv[])
 	int tableWidth = setN(argc, argv);
 
 	//read input
-	char toEncrypt[BUFSIZ];
+	char toEncrypt[BUFSIZ] = "";
 	readFromStdIn(toEncrypt);
 
 	//strip whitespace
-	char stripped[strlen(toEncrypt)];
+	char stripped[strlen(toEncrypt) + 1];
 	stripWhitespace(toEncrypt, stripped);
 
 	//pad to multiple of n

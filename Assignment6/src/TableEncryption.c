@@ -25,6 +25,10 @@ int setN(int argc, char* argv[])
 				argv[1]);
 			return -1;
 		} // if
+		else if (tableWidth = atoi(*argv[1]) <= 0)
+		{
+			fprintf(stderr, "n must be greater than 0!");
+		}
 		tableWidth = atoi(argv[1]);
 	}// if
 
