@@ -1,4 +1,4 @@
-# ECE 8473-DL1 Assignment 4
+# ECE 8473-DL1 Assignment 6
 
 ## [Assignment Details](https://fog.misty.com/perry/osp/a6/a6.html)
 Upload source files - individual files or archive (e.g. zip, tar) - to the a4 upload area in your private course links.
