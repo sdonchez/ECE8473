@@ -59,7 +59,7 @@ Test using [test2.sh](./sh/test2.sh).
 - `Makefile` - Build file outlining dependencies for each executable.
 
 ## Build and Test Procedure
-To build both executables (as well as the necessary custom library), execute `make all`.
+To build both executables, execute `make all`.
 
 To clean up all compilation products, execute `make clean`. 
 
