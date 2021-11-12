@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shell Scripts">
+      <UniqueIdentifier>{e925a37b-113f-43ae-a98b-ef1a3ef374af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\sh\test1.sh">
+      <Filter>Shell Scripts</Filter>
+    </None>
+    <None Include="..\..\sh\test2.sh">
+      <Filter>Shell Scripts</Filter>
+    </None>
+    <None Include="..\..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\p2.c" />
+  </ItemGroup>
+</Project>

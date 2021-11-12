@@ -10,6 +10,7 @@ This repository contains coursework implementing the assignments for ECE 8473 - 
 - [Assignment 5.1:](Assignment5.1/) Implements several string functions from the standard library.
 - [Assignment 5.2:](Assignment5.2/) Implements several additional non-standard string functions, as well as a testsuite for said functions.
 - [Assignment 6:](Assignment6/) Implements table encryption and decryption routines.
+- [Assignment 7:](Assignment7/) Implements basic regex parsing functionality.
 
 ## Development Environment
 The development environment used for this course consists of a Windows 10 Intel x64 machine (10.0.19043 Build 19043).
