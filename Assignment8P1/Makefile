@@ -1,7 +1,7 @@
 ################################################################################
 ## S.Donchez
 ## ECE8473-DL1
-## Makefile - builds the targets required for Assignment 8
+## Makefile - builds the targets required for Assignment 8 Part 1
 ################################################################################
 
 CC = gcc -std=c11 -pedantic -Wall
