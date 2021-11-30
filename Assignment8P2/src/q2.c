@@ -94,12 +94,12 @@ void X(double a[], int k)
 	//iterate through array n/2 times, swapping each appropriate pair of values
 	for (size_t i = 0; i < (numEls >> 1); i++)
 	{
-		elementSwap(a, currEl, currEl + (1 << k));
+		elementSwap(a, currEl, currEl + (1UL << k));
 		//we need to select 2^k consecutive elements, then skip 2^k elements
 		//(their matches), and repeat
 
 		//if we haven't just operated on 2^k consecutive elements, keep going
-		if ((currEl + 1) % (1 << k))
+		if ((currEl + 1) % (1UL << k))
 		{
 			currEl++;
 		} // if
@@ -108,7 +108,7 @@ void X(double a[], int k)
 		//pair just swapped
 		else
 		{
-			currEl += (1 << k) + 1;
+			currEl += (1UL << k) + 1;
 		} // else
 	}
 } // X
@@ -130,16 +130,16 @@ void CX(double a[], int c, int k)
 	{
 		//if the c'th bit of i is non-zero, that means bit c is set for a[i]
 		//and the flip should ocurr
-		if (currEl & (1 << c))
+		if (currEl & (1UL << c))
 		{
-			elementSwap(a, currEl, currEl + (1 << k));
+			elementSwap(a, currEl, currEl + (1UL << k));
 		}
 
 		//we need to select 2^k consecutive elements, then skip 2^k elements
 		//(their matches), and repeat
 
 		//if we haven't just operated on 2^k consecutive elements, keep going
-		if ((currEl + 1) % (1 << k))
+		if ((currEl + 1) % (1UL << k))
 		{
 			currEl++;
 		} // if
@@ -148,7 +148,7 @@ void CX(double a[], int c, int k)
 		//pair just swapped
 		else
 		{
-			currEl += (1 << k) + 1;
+			currEl += (1UL << k) + 1;
 		} // else
 	}
 } // CX
@@ -182,13 +182,13 @@ void H(double a[], int k)
 	//iterate through array, setting values per description above.
 	for (size_t i = 0; i < numEls; i++)
 	{
-		if (i & (1<<k))
+		if (i & (1UL<<k))
 		{
-			a[i] = normFactor * (-t[i] + t[i-(1<<k)]);
+			a[i] = normFactor * (-t[i] + t[i-(1UL<<k)]);
 		} // if
 		else
 		{
-			a[i] = normFactor * (t[i] + t[i + (1 << k)]);
+			a[i] = normFactor * (t[i] + t[i + (1UL << k)]);
 		} // else
 	} // for
 
@@ -210,7 +210,7 @@ void Z(double a[], int k)
 	for (size_t i = 0; i < numEls; i++)
 	{
 		//perform phase flip on all cases where bit k is set
-		if (i & (1 << k))
+		if (i & (1UL << k))
 		{
 			a[i] = -a[i];
 		} // if
@@ -361,14 +361,14 @@ void printArray(double a[], int numQubits, char* functionName)
 {
 	//print function name and opening brace
 	printf("%s: { ", functionName);
-	for (int i = 0; i < (1 << numQubits) - 1; i++)
+	for (int i = 0; i < (1UL << numQubits) - 1; i++)
 	{
 		//print first/middle values
 		printf("%g, ", a[i]);
 	} // for
 
 	//print end of string
-	printf("%g }\n", a[(1 << numQubits) - 1]);
+	printf("%g }\n", a[(1UL << numQubits) - 1]);
 } // printArray
 
 /*******************************************************************************
@@ -467,9 +467,10 @@ size_t measure(double a[], size_t numQubits)
 	}
 	// for
 
-	//error handling
-	fprintf(stderr, "Array is not normallized! aborting measurement!\n");
-	return -1;
+	//error handling - if sumProbs < 1.0
+	collapseQubits(a, numQubits, numEls - 1);
+	return numEls - 1;
+
 } // measure
 
 /*******************************************************************************
@@ -484,7 +485,7 @@ size_t measure(double a[], size_t numQubits)
 void collapseQubits(double a[], size_t numQubits, size_t collapseToState)
 {
 	// compute number of elements in array
-	numEls = pow(2, numQubits);
+	numEls = 1UL << numQubits;
 
 	for (int i = 0; i < numEls; i++)
 	{
