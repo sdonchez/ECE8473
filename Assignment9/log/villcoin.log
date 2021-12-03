@@ -1,0 +1,14 @@
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment9/bin$ ./villcoin 4
+n = 4, rand = 6ad8a864
+sdonchez|6ad8a864|00000000  8e 6e 10 6d b8 82 87 24 1b ff 4f c9 bb f4 58 ef bb a6 ee 9e
+sdonchez|6ad8a864|00000001  e2 91 9e 8f 13 dc d1 b7 89 ba a5 0a 17 19 13 c4 1d d1 1d b7
+sdonchez|6ad8a864|00000002  43 8d 12 50 0e 4f ea eb d8 1a f6 b8 34 c2 d4 65 35 7c 1a 7f
+sdonchez|6ad8a864|00000003  9f 07 9c b6 54 b8 a8 a6 14 7f 4f ba 2b 65 b4 b2 47 3b 79 8d
+sdonchez|6ad8a864|00000004  2a 0b e2 1f f8 f5 c2 2b 53 bf 24 8a 8d d5 4b 82 fd 44 e3 9d
+...
+sdonchez|6ad8a864|2e564500  00 00 00 00 af b9 e2 04 63 ff 59 99 d2 2c ab c7 7f 44 f0 57
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment9/bin$ echo -n "sdonchez|6ad8a864|2e564500"|sha1sum
+00000000afb9e20463ff5999d22cabc77f44f057  -
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment9/bin$ echo -n "sdonchez|6ad8a864|2e564500"|sha1sum|cut -f 1 -d " "
+00000000afb9e20463ff5999d22cabc77f44f057
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment9/bin$

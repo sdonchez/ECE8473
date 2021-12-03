@@ -32,6 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archives", "Archives", "{F9
 		SDonchezAssignment7.tar = SDonchezAssignment7.tar
 		SDonchezAssignment8P1.tar = SDonchezAssignment8P1.tar
 		SDonchezAssignment8P2.tar = SDonchezAssignment8P2.tar
+		SDonchezAssignment9.tar = SDonchezAssignment9.tar
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment6", "Assignment6\env\MSVS2019\Assignment6.vcxproj", "{A2601DE2-019F-490B-A1F0-60EBDC26C049}"
