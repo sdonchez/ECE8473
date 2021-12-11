@@ -13,8 +13,10 @@
       <Filter>Shell Scripts</Filter>
     </None>
     <None Include="..\..\README.md" />
+    <None Include="..\..\Makefile" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\p2.c" />
+    <ClCompile Include="..\..\src\p1.c" />
   </ItemGroup>
 </Project>
