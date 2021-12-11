@@ -14,6 +14,7 @@ This repository contains coursework implementing the assignments for ECE 8473 - 
 - [Assignment 8.1](Assignment8.1/) Implements a simulation of operations on two classical bits
 - [Assignment 8.2](Assignment8.2/) Implements a simulation of operations on two quantum bits, as well as a superdense coding simulation.
 - [Assignment 9](Assignment9/) Implements a cryptocurrency demo utilizing hashing and the stdlib random number generation facilities.
+- [Assignment 10](Assignment10/) Extends Assignment 9 to be a multi-threaded application, with each thread searching a different portion of the nonce space in parallel.
 
 ## Development Environment
 The development environment used for this course consists of a Windows 10 Intel x64 machine (10.0.19043 Build 19043).

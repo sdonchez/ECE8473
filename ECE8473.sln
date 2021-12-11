@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment1", "Assignment1\env\MSVS2019\Assignment1.vcxproj", "{99C369C4-3F30-4691-A781-808E76FB6D7C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment01", "Assignment1\env\MSVS2019\Assignment1.vcxproj", "{99C369C4-3F30-4691-A781-808E76FB6D7C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment3P2", "Assignment3\P2\env\MSVS2019\Assignment3P2.vcxproj", "{79B55A6C-3948-4541-9E11-30B5218F250E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment03P2", "Assignment3\P2\env\MSVS2019\Assignment3P2.vcxproj", "{79B55A6C-3948-4541-9E11-30B5218F250E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment4", "Assignment4\env\MSVS2019\Assignment4.vcxproj", "{5F292926-4540-47E8-95C8-C5B2F96D59ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment04", "Assignment4\env\MSVS2019\Assignment4.vcxproj", "{5F292926-4540-47E8-95C8-C5B2F96D59ED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment5.1", "Assignment5.1\env\MSVS2019\Assignment5.1.vcxproj", "{B7E74FFB-C81B-4EDD-BA35-FB17A1E7C8A3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment05.1", "Assignment5.1\env\MSVS2019\Assignment5.1.vcxproj", "{B7E74FFB-C81B-4EDD-BA35-FB17A1E7C8A3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment5.2", "Assignment5.2\env\MSVS2019\Assignment5.2.vcxproj", "{EC430BE5-0465-4D66-A9B0-A020CE276941}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment05.2", "Assignment5.2\env\MSVS2019\Assignment5.2.vcxproj", "{EC430BE5-0465-4D66-A9B0-A020CE276941}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52088393-FD00-4E2F-87FC-2C2B00224A7E}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,6 +23,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archives", "Archives", "{F9B1D96E-C562-4DDE-B34A-0C4C450772B6}"
 	ProjectSection(SolutionItems) = preProject
 		SDonchezAssignment1.tar = SDonchezAssignment1.tar
+		SDonchezAssignment10.tar = SDonchezAssignment10.tar
 		SDonchezAssignment2.tar = SDonchezAssignment2.tar
 		SDonchezAssignment3.tar = SDonchezAssignment3.tar
 		SDonchezAssignment4.tar = SDonchezAssignment4.tar
@@ -35,15 +36,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archives", "Archives", "{F9
 		SDonchezAssignment9.tar = SDonchezAssignment9.tar
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment6", "Assignment6\env\MSVS2019\Assignment6.vcxproj", "{A2601DE2-019F-490B-A1F0-60EBDC26C049}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment06", "Assignment6\env\MSVS2019\Assignment6.vcxproj", "{A2601DE2-019F-490B-A1F0-60EBDC26C049}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment7", "Assignment7\env\MSVS2019\Assignment7.vcxproj", "{0257D35E-1D28-4A0D-A660-E00707265839}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment07", "Assignment7\env\MSVS2019\Assignment7.vcxproj", "{0257D35E-1D28-4A0D-A660-E00707265839}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment8P1", "Assignment8P1\env\MSVS2019\Assignment8P1.vcxproj", "{A179BC90-484B-45A5-84B8-90EB9E0BD21A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment08P1", "Assignment8P1\env\MSVS2019\Assignment8P1.vcxproj", "{A179BC90-484B-45A5-84B8-90EB9E0BD21A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment8P2", "Assignment8P2\env\MSVS2019\Assignment8P2.vcxproj", "{CB86B598-277B-4691-9D97-67C702DD951A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment08P2", "Assignment8P2\env\MSVS2019\Assignment8P2.vcxproj", "{CB86B598-277B-4691-9D97-67C702DD951A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment9", "Assignment9\env\MSVS2019\Assignment9.vcxproj", "{68098FF5-2D24-40B0-9017-3E53B319B6BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment09", "Assignment9\env\MSVS2019\Assignment9.vcxproj", "{68098FF5-2D24-40B0-9017-3E53B319B6BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment10", "Assignment10\env\MSVS2019\Assignment10.vcxproj", "{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -421,6 +424,42 @@ Global
 		{68098FF5-2D24-40B0-9017-3E53B319B6BC}.Release|x86.ActiveCfg = Release|x86
 		{68098FF5-2D24-40B0-9017-3E53B319B6BC}.Release|x86.Build.0 = Release|x86
 		{68098FF5-2D24-40B0-9017-3E53B319B6BC}.Release|x86.Deploy.0 = Release|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM.Build.0 = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM64.Build.0 = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x64.ActiveCfg = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x64.Build.0 = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x64.Deploy.0 = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x86.ActiveCfg = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x86.Build.0 = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Debug|x86.Deploy.0 = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM.ActiveCfg = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM.Build.0 = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM.Deploy.0 = Debug|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM64.ActiveCfg = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM64.Build.0 = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|ARM64.Deploy.0 = Debug|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x64.ActiveCfg = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x64.Build.0 = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x64.Deploy.0 = Debug|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x86.ActiveCfg = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x86.Build.0 = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Default|x86.Deploy.0 = Debug|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM.ActiveCfg = Release|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM.Build.0 = Release|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM.Deploy.0 = Release|ARM
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM64.ActiveCfg = Release|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM64.Build.0 = Release|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|ARM64.Deploy.0 = Release|ARM64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x64.ActiveCfg = Release|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x64.Build.0 = Release|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x64.Deploy.0 = Release|x64
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x86.ActiveCfg = Release|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x86.Build.0 = Release|x86
+		{C8E41949-1ECD-48B5-9D9E-8C6C11C22583}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

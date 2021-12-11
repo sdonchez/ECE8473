@@ -1,0 +1,12 @@
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment10/bin$ ./villcoin 4
+n = 4, rand = 1ec57a02
+f 0: start = 0x00000000, size = 0x40000000
+f 1: start = 0x40000000, size = 0x40000000
+f 2: start = 0x80000000, size = 0x40000000
+f 3: start = 0xc0000000, size = 0x40000000
+f 1: success! sdonchez|1ec57a02|52f90ff3  00 00 00 00 d0 bb d9 19 05 ae 0f a8 b8 67 69 49 75 e0 86 41
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment10/bin$ echo -n "sdonchez|1ec57a02|52f90ff3"|sha1sum
+00000000d0bbd91905ae0fa8b867694975e08641  -
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment10/bin$ echo -n "sdonchez|1ec57a02|52f90ff3"|sha1sum|cut -f 1 -d " "
+00000000d0bbd91905ae0fa8b867694975e08641
+sgdon@DESKTOP-2BDEB70:~/projects/Assignment10/bin$
