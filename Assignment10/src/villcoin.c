@@ -127,7 +127,7 @@ int main(int argc, char* argv[])
 
 	// start the threads
  	pthread_t t[NUMTHREADS];
-	unsigned int size = (UINT32_MAX/ NUMTHREADS) + 1;
+	unsigned int size = (UINT32_MAX + 1UL)/ NUMTHREADS;
 
 	for (int i = 0; i < NUMTHREADS; i++)
 	{
@@ -160,13 +160,11 @@ int main(int argc, char* argv[])
 
 	// stop all threads
 	for (int i = 0; i < NUMTHREADS; ++i) pthread_cancel(t[i]);
+	if (!found)
 	{
-		if (!found)
-		{
-			fprintf(stderr, "Failed to find a valid VillCoin! \n");
-			return -2;
-		} // if
-	} // for
+		fprintf(stderr, "Failed to find a valid VillCoin! \n");
+		return -2;
+	} // if
 
 	return 0;
 } // main
@@ -199,8 +197,7 @@ void* searchForMatch(void* tPs)
 		printf("f %i: success! ", params.threadNo);
 		printHashLine(params.constant, nonce - 1, params.hash);
 
-		//or to preserve true from any other thread (WAW race condition)
-		found |= true;
+		found = true;
 	} // if
 	else
 	{
